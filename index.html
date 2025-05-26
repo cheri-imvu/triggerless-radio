@@ -1,13 +1,66 @@
-<!doctype html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="DJ Radio Site created by Triggers using React" />
+    <meta property="og:description" content="DJ Radio Site created by Triggers using React" />
+    <meta property="og:title" content="Triggerless Radio" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="radio.triggerless.com" />
+    <meta property="og:image" content="https://radio.triggerless.com/i/triggerless_radio.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <title>Triggerless Radio</title>
+    <link rel="stylesheet" href="/radio.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="radio.js"></script>
+    <script defer="defer" src="/static/js/main.e76ad58d.js"></script>
+    <link href="/static/css/main.c6a2f936.css" rel="stylesheet" />
   </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+  <body background="https://radio.triggerless.com/bg.jpg" onload="getNextPic()">
+    <div class="centerText">
+      <div class="title"><img src="i/triggerless_radio.png" /></div>
+      <div class="subtitle">with your hostess Triggers IMVU</div>
+      <table style="margin: auto;">
+        <tr>
+          <td valign="top">
+            <!-- Caster -->
+			      <!--
+            <script type="text/javascript">
+              var cstrFreePlayerUid = 542342,
+                cstrFreePlayerTheme = "yellow",
+                cstrFreePlayerColor = "";
+            </script>
+            <script type="text/javascript" src="//corscdn.caster.fm/freeplayer/FreePlanPlayerEmbed.js"></script>
+            <a id="cstrFreePlayerBL1" href="//www.caster.fm/">Free Shoutcast Hosting</a> <a id="cstrFreePlayerBL2" href="//www.caster.fm/">Radio Stream Hosting</a>
+            <div id="cstrFreePlayerDiv"></div> 
+			      -->
+            <!-- Local Icecast -->
+			      <iframe src="client.php" frameborder="0" width="840" height="184" ></iframe>
+            <div id="root"></div>
+          </td>
+          <td valign="top"><img id="profilePic" src="https://userimages-akm.imvu.com/userdata/25/52/21/41/userpics/Snap_KfX7OE46vO586194599.jpg" /></td>
+        </tr>
+        <tr>
+          <td><img id="radioImage" src="i/radio.jpg" /></td>
+        </tr>
+        <tr>
+          <td>
+            <div id="swingBox"><img class="swingImage" src="i/swing-couple-1.gif" /> <img class="swingImage" src="i/swing-couple-2.gif" /> <img class="swingImage" src="i/swing-couple-3.gif" /></div>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="centerText">
+            <div class="centerText"></div>
+            <img src="i/guitar-hearts.gif" /> <a href="https://www.triggerless.com/web/" target="_blank"><img src="https://triggerless.com/web/wp-content/uploads/2015/04/logo-u.png" /></a><br />
+            <span id="trickery">The seedy underbelly of IMVU trickery</span>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" style="text-align: center; padding-top: 20px;"><img class="bigGif" src="i/bounce-club.gif" /> <img class="bigGif" src="i/miko-dance.gif" /></td>
+        </tr>
+      </table>
+    </div>
   </body>
 </html>
